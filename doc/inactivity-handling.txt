@@ -1,0 +1,25 @@
+
+Inactivity Handling
+
+    A player has 20 seconds to make a throw.
+
+    If the local player hasn't received the next throw of the remote player
+    after 20 seconds, the match is canceled.  The local player is told of the
+    situation and is given a placebo alert to report the remote player as
+    a cheater.  This does nothing but hopefully prevent the local player from
+    giving us a bad review in the App Store.
+
+    What happens when both players disconnect?
+
+        If both players disconnect, the match is automatically canceled by
+        virtue of not existing any longer.  Recall that there is no third-party
+        mediator keeping track of the match; it's P2P.
+
+    What happens when both players stall or fail to act?
+
+        Both apps will notice the other side stalling and will cancel their
+        copy of the match, and show the placebo alert about cheating.  
+
+    What does canceling a match mean?
+
+        Nothing gets reported to a leaderboard, and the match is simply discarded.

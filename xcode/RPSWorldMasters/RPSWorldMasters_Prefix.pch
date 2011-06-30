@@ -1,0 +1,131 @@
+//
+// Prefix header for all source files of the 'RPSWorldMasters' target in the 'RPSWorldMasters' project
+//
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <GameKit/GameKit.h>
+
+#import "cocos2d.h"
+#import "SimpleAudioEngine.h"
+
+#import "CCDirector+Utilities.h"
+#import "GameKitHelper.h"
+#import "AnalyticsUtil.h"
+
+
+#define kStatusBarHeight 22
+
+
+#define kRPSPrimaryFontName   @"CGF Locust Resistance"
+#define kRPSSecondaryFontName @"Bebas"
+
+// Chosen since it's clean, built-in, and supports many UNICODE glyphs.
+// We cannot control the languages of the player aliases so using a custom
+// font with an incomplete glyph set is a bad idea.
+
+#define kRPSScoreboardFontName @"Futura-Medium"
+
+
+
+
+// Make the fonts larger on iPad.
+
+#define kRPSFontSizeTiny   ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 14 : 10)
+#define kRPSFontSizeSmall  ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 26 : 12)
+#define kRPSFontSizeMedium ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 44 : 18)
+#define kRPSFontSizeLarge  ((UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? 80 : 30)
+
+
+#define kRPSColorPlayer     ccc3(255, 47, 56)
+#define kRPSColorPlayerHand ccc3(224,210,210)
+
+
+#define kRPSLowOpacity 160 
+
+
+#define kRPSTransitionDuration 0.5
+
+
+// Use the -hd files on iPad.
+
+#define NameForImage(x,type) [NSString stringWithFormat:@"%@%@.%@", x, \
+	(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) \
+	? CC_RETINA_DISPLAY_FILENAME_SUFFIX : @"", type]
+#define NameForPNGImage(x) NameForImage(x,@"png")
+#define NameForJPGImage(x) NameForImage(x,@"jpg")
+
+
+typedef enum {
+    kRPSThrowNone,
+    kRPSThrowRock     = 'R',
+    kRPSThrowPaper    = 'P',
+    kRPSThrowScissors = 'S'
+} RPSThrowType;
+
+
+enum {
+    // Scenes
+    
+    kRPSTagSceneError = 1,
+	kRPSTagSceneMain,
+    kRPSTagSceneSettings,
+    kRPSTagSceneHelp,
+    kRPSTagSceneCredits,
+    kRPSTagSceneMatch,
+    kRPSTagPlayNowStatus,
+    
+    // Layers
+    
+    kRPSTagLayerBackground,
+    kRPSTagLayerMainMenu,
+    
+    // Sprites/Labels/etc in MainMenuLayer
+    
+    kRPSTagTitle,
+    kRPSTagSubtitle,
+    kRPSTagPlayersOnline,
+    
+    // Sprites/Labels/etc in MatchScene
+    
+    kRPSTagEarth,
+    kRPSTagStars,    
+    kRPSTagLocalRock,
+    kRPSTagLocalPaper,
+    kRPSTagLocalScissors,
+    kRPSTagRemoteRock,
+    kRPSTagRemotePaper,
+    kRPSTagRemoteScissors,
+    kRPSTagThrowChoiceMenu,
+    kRPSTagControlMenu,
+    kRPSTagNextThrowLabel,
+    kRPSTagMessageLabel,
+    kRPSTagPlayerNames,
+    kRPSTagSet1Score,
+    kRPSTagSet2Score,
+    kRPSTagSet3Score,
+    kRPSTagLocalPlayerClock,
+    kRPSTagRemotePlayerClock,
+    
+    // Sprites/Labels/etc in WaitingLayer
+    
+    kRPSTagWaitingLabel,
+    
+    // SettingsLayer (this a UIKit tag mind you)
+    
+    kRPSTagVolumeSlider
+};
+
+
+// There's but one leaderboard at this time; the scores are the number of matches won.
+
+#define kRPSLeaderboardName @"WINS"
+
+// How many throws need to be thrown (total) before a resignation counts as a win for the other player?
+
+#define kRPSMatchMinThrows 3
+
+// How long should the "You Won!" (etc.) message stay on the screen before we go back to the main menu?
+
+#define kRPSGameOverMainMenuDelay 3
+

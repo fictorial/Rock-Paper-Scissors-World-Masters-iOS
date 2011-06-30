@@ -1,0 +1,21 @@
+
+later maybe, based on engagement
+-----------------------------------------------------------
+
+- need code to cache and resubmit failed scores for the local player
+    - this really is just a single value in the nsuserdefaults since it's monotonically increasing
+
+- code to rate the app
+    - after 100 matches have been played
+    - "We hope you have enjoyed RPS WORLD MASTERS. Would you mind taking a moment add your rating
+       and/or review in the App Store?"
+
+- detect cheaters by those who resign a lot of matches
+    - put this info on a server somewhere? track it in the local device?
+
+- rematch button would be a good feature
+    - maybe just remember the last playerID played and programmatically invite him?
+
+- consider 2nd leaderboard for players that have played more than 1000 matches 
+    - track progress via an achievement
+

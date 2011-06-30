@@ -1,0 +1,39 @@
+TBasicExample
+v7
+r1
+
+N/Volumes/rviswanathan/iphone-analytics-sdk/googlemac/iPhone/GoogleAnalytics/SDK/Examples/BasicExample/MainWindow.xib
+c000000004C3BEDCE0000000000002837
+t1278995918
+s10295
+
+N/Volumes/rviswanathan/iphone-analytics-sdk/googlemac/iPhone/GoogleAnalytics/SDK/Examples/BasicExample/build/Debug/BasicExample.app
+t2
+s0
+
+N/Volumes/rviswanathan/iphone-analytics-sdk/googlemac/iPhone/GoogleAnalytics/SDK/Examples/BasicExample/build/Debug/BasicExample.app/Contents/Info.plist
+t2
+s0
+
+N/Volumes/rviswanathan/iphone-analytics-sdk/googlemac/iPhone/GoogleAnalytics/SDK/Examples/BasicExample/build/Debug/BasicExample.app/Contents/PkgInfo
+t2
+s0
+
+N/Volumes/rviswanathan/iphone-analytics-sdk/googlemac/iPhone/GoogleAnalytics/SDK/Examples/BasicExample/build/Debug/BasicExample.app/Contents/Resources/MainWindow.nib
+t2
+s0
+
+NInfo.plist
+c000000004C3BEDCE0000000000000383
+t1278995918
+s899
+
+CCompileXIB /Volumes/rviswanathan/iphone-analytics-sdk/googlemac/iPhone/GoogleAnalytics/SDK/Examples/BasicExample/MainWindow.xib
+r0
+
+CProcessInfoPlistFile /Volumes/rviswanathan/iphone-analytics-sdk/googlemac/iPhone/GoogleAnalytics/SDK/Examples/BasicExample/build/Debug/BasicExample.app/Contents/Info.plist Info.plist
+r0
+
+CTouch /Volumes/rviswanathan/iphone-analytics-sdk/googlemac/iPhone/GoogleAnalytics/SDK/Examples/BasicExample/build/Debug/BasicExample.app
+r0
+
