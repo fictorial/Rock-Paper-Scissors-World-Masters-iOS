@@ -52,7 +52,7 @@ support@fictorial.com.
 
 ## License
 
-Please see [doc/LICENSE.RpsWorldMasters](https://github.com/fictorial/RPS-World-Masters/blob/master/doc/LICENSE.RpsWorldMasters).
+Please see [doc/LICENSE.RpsWorldMasters](https://github.com/fictorial/rps/blob/master/doc/LICENSE.RpsWorldMasters).
 
 ## Author
 
