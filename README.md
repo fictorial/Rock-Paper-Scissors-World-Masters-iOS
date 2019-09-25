@@ -1,15 +1,18 @@
-I'm open-sourcing this simple multiplayer RPS game I made over
-the course of 3 days in January 2011. It's available [on the app
-store](http://itunes.apple.com/app/rps-world-masters-online-rock/id412539922?mt=8).
-
-The major issue with this game is that it is *multiplayer only*.
-If no one is online there's not much you can do. There has to be
-some sort of momentum to keep people online and playing and that's 
-just never going to happen with a casual game like this.
-
 # RPS World Masters - Online Rock Paper Scissors
 
 ![Logo](https://raw.githubusercontent.com/fictorial/Rock-Paper-Scissors-World-Masters-iOS/master/screenshots/ipad/003.png)
+
+> I'm open-sourcing this simple multiplayer RPS game I made over
+> the course of 3 days in January 2011. It's available [on the app
+> store](http://itunes.apple.com/app/rps-world-masters-online-rock/id412539922?mt=8).
+> 
+> The major issue with this game is that it is *multiplayer only*.
+> If no one is online there's not much you can do. There has to be
+> some sort of momentum to keep people online and playing and that's 
+> just never going to happen with a casual game like this.
+
+---
+
 
 *RPS WORLD MASTERS* is an addictive online-only version of the classic
 Rock Paper Scissors game for the iPhone, iPod touch, and iPad.
