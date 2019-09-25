@@ -9,7 +9,7 @@ just never going to happen with a casual game like this.
 
 # RPS World Masters - Online Rock Paper Scissors
 
-![Logo](http://fictorial.com/rps/mockup_gameplay.jpg)
+![Logo](https://raw.githubusercontent.com/fictorial/Rock-Paper-Scissors-World-Masters-iOS/master/screenshots/ipad/003.png)
 
 *RPS WORLD MASTERS* is an addictive online-only version of the classic
 Rock Paper Scissors game for the iPhone, iPod touch, and iPad.
